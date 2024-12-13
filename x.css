@@ -1,0 +1,100 @@
+:root {
+    /* --backblue: #00143c; */
+    --backblue: black;
+}
+
+html {
+    font-size: 140%;
+}
+
+html, input {
+    background-color: var(--backblue);
+    font-family: monospace;
+    color: #f0f0f0;
+}
+
+input {
+    text-align: right;
+    width: 13ch;
+    height: 1lh;
+    outline: none;
+    border: solid 2px white;
+}
+
+#error {
+    color: #f00000;
+    font-weight: bold;
+}
+
+#witamy {
+    color: #00f000;
+    font-weight: bold;
+}
+
+#main-container {
+    cursor: default;
+    margin: auto;
+    text-align: center;
+}
+
+#new {
+    cursor: pointer;
+    color: #b478f0;
+    outline: groove 4px #b478f0;
+}
+
+#dodaj {
+    cursor: pointer;
+    color: #78b4f0;
+    outline: groove 4px #78b4f0;
+}
+
+#skala {
+    display: block;
+    margin: auto;
+}
+
+#doPrawej {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hist {
+    border: solid 2px white;
+    border-radius: 6px;
+    margin: auto;
+    vertical-align: top;
+}
+
+.hist:not([hidden]) {
+    display: inline-block;
+}
+
+.hist td {
+    border-left: solid 2px white;
+    border-top: solid 2px white;
+    padding: 5px;
+}
+
+.hist tr:first-child td {
+    border-top: none;
+}
+
+.hist td:first-child {
+    border-left: none;
+}
+
+#nadTablica {
+    color: #f0f000;
+    font-weight: bold;
+}
+
+td.dzien {
+    color: #00f000;
+}
+
+h1 {
+    color: #f0f000;
+}

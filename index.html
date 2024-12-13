@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Licznik Celu</title>
+        <link rel="stylesheet" type="text/css" href="x.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>Professionally Forever</h1>
+            <p><span id="new">Rozpocznij nową sesję</span></p>
+            <p id="error" hidden></p>
+            <p id="witamy" hidden></p>
+            <label for="doIlu">Twój Cel:</label>
+            <input id="doIlu" type="number" min="2" value="4">
+            <br>
+            <label for="dzisiaj">Dzisiejszy zysk:</label>
+            <input id="dzisiaj" type="number" min="0">
+            <p><span id="dodaj">Dodaj dzisiejsze punkty CC</span></p>
+            <canvas id="skala"></canvas>
+            <p><span id="ileBrakuje"></span></p>
+            <div id="doPrawej" hidden>
+                <p id="nadTablica">Historia Twoich zysków</p>
+                <table class="hist" id="historia"></table>
+            </div>
+        </div>
+    </body>
+</html>
