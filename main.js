@@ -74,7 +74,7 @@ function updateHistoria(histArr, dodane, dzien, prevDzien) {
         historia.after(histTable);
         historia = $('#historia');
     }
-    if (0 && dzien === prevDzien) {
+    if (dzien === prevDzien) {
         const ostatni = historia.children().last().children().last();
         const nowa = wyczyscDziwnePrzecinki(+ostatni.text() + dodane);
         ostatni.text(nowa);
