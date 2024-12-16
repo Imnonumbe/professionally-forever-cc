@@ -20,7 +20,6 @@ function drawScale(ctx, w, h, topVal, kropka) {
     ctx.lineTo(barX, barY2);
     ctx.moveTo(barX - tickBigW, barY2);
     ctx.lineTo(barX + tickBigW, barY2);
-    ctx.font = '20px sans-serif';
     ctx.fillStyle = 'black';
     const measured = ctx.measureText('8');
     const numTextHeight = measured.actualBoundingBoxAscent +
@@ -87,12 +86,14 @@ function updateHistoria(histArr, dodane, dzien, prevDzien) {
 
 $(document).ready(() => {
     const skala = $('#skala');
-    skala.attr('width', 480).attr('height', 800);
-    skala.css('width', '240px').css('height', '400px');
+    skala.attr('width', 780).attr('height', 1200);
+    skala.css('width', '234px').css('height', '360px');
     const dpi = window.devicePixelRatio;
-    const w = 480 / dpi, h = 800 / dpi;
+    const w = 780 / dpi, h = 1200 / dpi;
     const ctx = skala[0].getContext('2d');
     ctx.scale(dpi, dpi);
+
+    ctx.font = `${Math.ceil(40 / dpi)}px sans-serif`;
 
     let kropka = 0, doIlu = 4, dzien = 0, histArr = [];
 
